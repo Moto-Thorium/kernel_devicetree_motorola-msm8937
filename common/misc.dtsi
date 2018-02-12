@@ -37,6 +37,7 @@
 };
 
 &usb_otg {
+	extcon = <&qpnp_smbcharger>;
 	qcom,usbin-vadc = <&pmi8950_vadc>;
 	qcom,usbid-gpio = <&tlmm 97 0>;
 	pinctrl-names = "default", "usbid-off";
