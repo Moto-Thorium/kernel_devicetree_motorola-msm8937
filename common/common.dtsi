@@ -24,6 +24,10 @@
 #include "qcom/msm8940.dtsi"
 #endif
 
+#ifdef SOC_MSM8917
+#include "qcom/msm8917-audio.dtsi"
+#endif
+
 #include "qcom/pmi8950.dtsi"
 
 #ifdef SOC_MSM8917
