@@ -1,3 +1,7 @@
+&msm_gpu {
+	qcom,disable-wake-on-touch;
+};
+
 &qcom_seecom {
 	qcom,appsbl-qseecom-support;
 };
