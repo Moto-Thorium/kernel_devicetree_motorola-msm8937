@@ -57,5 +57,6 @@
 #include "soc.dtsi"
 #include "storage.dtsi"
 #include "thermal.dtsi"
+#include "vibrator.dtsi"
 
 #include "peripheral/peripheral.dtsi"
