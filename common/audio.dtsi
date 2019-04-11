@@ -1,4 +1,10 @@
 &int_codec {
+	/delete-property/ asoc-wsa-codec-names;
+	/delete-property/ asoc-wsa-codec-prefixes;
+	/delete-property/ msm-vdd-wsa-switch-supply;
+	/delete-property/ qcom,msm-vdd-wsa-switch-voltage;
+	/delete-property/ qcom,msm-vdd-wsa-switch-current;
+
 	status = "okay";
 	qcom,model = "msm8952-snd-card";
 	qcom,msm-mbhc-hphl-swh = <1>;
