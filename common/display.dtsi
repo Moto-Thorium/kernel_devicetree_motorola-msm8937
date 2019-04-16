@@ -11,3 +11,7 @@
 &mdss_mdp {
 	qcom,mdss-pref-prim-intf = "dsi";
 };
+
+&wled {
+	qcom,wled-stepper-en;
+};
