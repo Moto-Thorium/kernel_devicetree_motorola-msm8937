@@ -30,6 +30,10 @@
 		linux,contiguous-region = <&tzlog_bck_mem>;
 	};
 
+	restart@4ab000 {
+		qcom,force-warm-reboot;
+	};
+
 	wdog: qcom,wdt@b017000 {
 		qcom,bark-time = <22000>;
 		linux,contiguous-region = <&wdog_cpuctx_mem>;
