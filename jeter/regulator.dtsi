@@ -1,0 +1,33 @@
+#ifdef SOC_MSM8920
+&pm8917_l6 {
+	regulator-always-on;
+	regulator-boot-on;
+};
+
+&pm8917_l10 {
+	regulator-always-on;
+	regulator-boot-on;
+};
+#else
+&pm8937_l6 {
+	regulator-always-on;
+	regulator-boot-on;
+};
+
+&pm8937_l10 {
+	regulator-always-on;
+	regulator-boot-on;
+};
+#endif
+
+&rpm_bus {
+	rpm-regulator-ldoa18 {
+		status = "okay";
+		pm8937_l18: regulator-l18 {
+			regulator-min-microvolt = <2700000>;
+			regulator-max-microvolt = <2700000>;
+			qcom,init-voltage = <2700000>;
+			status = "okay";
+		};
+	};
+};

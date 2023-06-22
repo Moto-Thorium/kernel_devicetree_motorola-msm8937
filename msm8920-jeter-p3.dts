@@ -12,10 +12,19 @@
 
 /dts-v1/;
 
-#include "msm8920.dtsi"
-#include "msm8920-jeter.dtsi"
+#include "qcom/msm8920.dtsi"
+
+#define SOC_MSM8920
+#include "common/common.dtsi"
+
+#define DEVICE_JETER
+#include "jeter/jeter.dtsi"
 
 / {
+        model = "jeter";
+        compatible = "qcom,msm8920-jeter", "qcom,msm8920-moto",
+                        "qcom,msm8920";
+
 	qcom,board-id = <0x43 0x83a0>;
 };
 

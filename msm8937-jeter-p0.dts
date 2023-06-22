@@ -12,9 +12,16 @@
 
 /dts-v1/;
 
-#include "msm8937.dtsi"
-#include "msm8937-jeter.dtsi"
+#define SOC_MSM8937
+#include "common/common.dtsi"
+
+#define DEVICE_ALJETER
+#include "jeter/jeter.dtsi"
 
 / {
+	model = "jeter";
+	compatible = "qcom,msm8937-jeter", "qcom,msm8937-moto",
+			"qcom,msm8937";
+
 	qcom,board-id = <0x4A 0x8100>, <0x4A 0x8000>, <0x4B 0x8000>;
 };

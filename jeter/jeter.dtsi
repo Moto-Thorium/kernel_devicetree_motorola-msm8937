@@ -10,14 +10,23 @@
  * GNU General Public License for more details.
  */
 
-#include "msm8917-moto-common.dtsi"
-#include "msm8917-jeter-common.dtsi"
-#include "msm8917-camera-sensor-mot-jeterl.dtsi"
+#ifndef DEVICE_JETER
+#include "pinctrl.dtsi"
+#endif
 
- / {
-	model = "jeter";
-	compatible = "qcom,msm8917-jeter", "qcom,msm8917-moto",
-			"qcom,msm8917";
-
-};
-
+#include "android.dtsi"
+#include "audio.dtsi"
+#include "battery.dtsi"
+#include "camera.dtsi"
+#include "display.dtsi"
+#include "fingerprint.dtsi"
+#include "misc.dtsi"
+#include "nfc.dtsi"
+#include "pmi8950.dtsi"
+#include "radio.dtsi"
+#include "regulator.dtsi"
+#include "sensor-sar.dtsi"
+#include "storage.dtsi"
+#include "thermal.dtsi"
+#include "touchscreen.dtsi"
+#include "vibrator.dtsi"
