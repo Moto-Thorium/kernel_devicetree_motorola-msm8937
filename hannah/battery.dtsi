@@ -5,7 +5,7 @@
 	#include "../batterydata/batterydata-he50-cos-pmi8937-r1.dtsi"
 };
 
-&pmi8950_charger {
+&qpnp_smbcharger {
 	qcom,fastchg-current-ma = <3000>;
 #ifdef DEVICE_HANNAH
 	qcom,chg-thermal-mitigation = <3000>, <2500>,<2000>, <1500>,
@@ -47,7 +47,7 @@
 	qcom,lower-limit-capacity = <60>;
 };
 
-&pmi8950_fg {
+&qpnp_fg {
 	qcom,ext-sense-type; /* External Sense Resistor */
 	qcom,thermal-coefficients = /bits/ 16 <0xda86 0xf050 0x083c>;
 	qcom,irq-volt-empty-mv = <3200>;
