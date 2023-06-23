@@ -1,19 +1,11 @@
 &sdhc_1 {
 	/* device core power supply */
-#ifdef SOC_MSM8917
-	vdd-supply = <&pm8917_l8>;
-#else
 	vdd-supply = <&pm8937_l8>;
-#endif
 	qcom,vdd-voltage-level = <2900000 2900000>;
 	qcom,vdd-current-level = <200 570000>;
 
 	/* device communication power supply */
-#ifdef SOC_MSM8917
-	vdd-io-supply = <&pm8917_l5>;
-#else
 	vdd-io-supply = <&pm8937_l5>;
-#endif
 	qcom,vdd-io-always-on;
 	qcom,vdd-io-lpm-sup;
 	qcom,vdd-io-voltage-level = <1800000 1800000>;
@@ -33,20 +25,12 @@
 
 &sdhc_2 {
 	/* device core power supply */
-#ifdef SOC_MSM8917
-	vdd-supply = <&pm8917_l11>;
-#else
 	vdd-supply = <&pm8937_l11>;
-#endif
 	qcom,vdd-voltage-level = <2950000 2950000>;
 	qcom,vdd-current-level = <15000 800000>;
 
 	/* device communication power supply */
-#ifdef SOC_MSM8917
-	vdd-io-supply = <&pm8917_l12>;
-#else
 	vdd-io-supply = <&pm8937_l12>;
-#endif
 	qcom,vdd-io-voltage-level = <1800000 2950000>;
 	qcom,vdd-io-current-level = <200 22000>;
 

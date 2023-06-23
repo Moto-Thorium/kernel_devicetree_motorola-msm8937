@@ -9,11 +9,7 @@
 
 		regulator-l18 {
 			compatible = "qcom,rpm-smd-regulator";
-#ifdef SOC_MSM8917
-			regulator-name = "pm8917_l18";
-#else
 			regulator-name = "pm8937_l18";
-#endif
 			qcom,set = <3>;
 			status = "okay";
 		};
