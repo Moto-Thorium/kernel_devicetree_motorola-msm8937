@@ -4,7 +4,7 @@
 	};
 };
 
-&pmi8950_charger {
+&qpnp_smbcharger {
 	status = "okay";
 	/delete-property/ qcom,iterm-ma;
 	qcom,iterm-disabled;
@@ -51,7 +51,7 @@
 	qcom,enable-hvdcp-9v;
 };
 
-&pmi8950_fg {
+&qpnp_fg {
 	status = "okay";
 	qcom,warm-bat-decidegc = <450>;
 	qcom,cool-bat-decidegc = <0>;
