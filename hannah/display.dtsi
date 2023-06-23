@@ -37,11 +37,7 @@
 #else
 	qcom,dsi-pref-prim-pan = <&mot_tianma_599_hd_vid_v0>;
 #endif
-#ifdef SOC_MSM8917
-	vddio_disp-supply = <&pm8917_l6>;
-#else
 	vddio_disp-supply = <&pm8937_l6>;
-#endif
 	vsp_disp-supply = <&lab_regulator>;
 	vsn_disp-supply = <&ibb_regulator>;
 

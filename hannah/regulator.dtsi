@@ -1,14 +1,3 @@
-#ifdef SOC_MSM8917
-&pm8917_l6 {
-	regulator-always-on;
-	regulator-boot-on;
-};
-
-&pm8917_l10 {
-	regulator-always-on;
-	regulator-boot-on;
-};
-#else
 &pm8937_l6 {
 	regulator-always-on;
 	regulator-boot-on;
@@ -18,7 +7,6 @@
 	regulator-always-on;
 	regulator-boot-on;
 };
-#endif
 
 &rpm_bus {
 	rpm-regulator-ldoa18 {
