@@ -1,4 +1,5 @@
 &tlmm {
+	/delete-node/ spi7;
 	spi_7 {
 		/* BLSP7 MOSI, MISO, CLK */
 		spi_7_active: spi_7_active {
