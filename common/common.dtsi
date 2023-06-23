@@ -24,7 +24,7 @@
 #include "qcom/msm8940.dtsi"
 #endif
 
-#include "qcom/msm-pmi8950.dtsi"
+#include "qcom/pmi8950.dtsi"
 
 #ifdef SOC_MSM8917
 #include "qcom/msm8917-pinctrl.dtsi"
