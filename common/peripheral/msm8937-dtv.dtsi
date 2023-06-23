@@ -104,8 +104,8 @@
 		pinctrl-names = "spi_default", "spi_sleep";
 		pinctrl-0 = <&spi_7_active &spi7_cs0_active>;
 		pinctrl-1 = <&spi_7_sleep &spi7_cs0_sleep>;
-		clocks = <&clock_gcc clk_gcc_blsp2_ahb_clk>,
-			 <&clock_gcc clk_gcc_blsp2_qup3_spi_apps_clk>;
+		clocks = <&gcc GCC_BLSP2_AHB_CLK>,
+			 <&gcc GCC_BLSP2_QUP3_SPI_APPS_CLK>;
 		clock-names = "iface_clk", "core_clk";
 		qcom,infinite-mode = <0>;
 		qcom,use-bam;
@@ -129,7 +129,7 @@
 			enable-active-high;
 			pinctrl-names = "default";
 			pinctrl-0 = <&dtv_output_default &dtv_input_default>;
-			clocks = <&clock_gcc clk_bb_clk2>;
+			clocks = <&rpmcc RPM_SMD_BB_CLK2>;
 			clock-names = "dtv_refclk";
 			isdbt_vdd-supply = <&pm8937_l6>;
 			qcom,vdd-min-max-voltage = <1800000 1800000>;

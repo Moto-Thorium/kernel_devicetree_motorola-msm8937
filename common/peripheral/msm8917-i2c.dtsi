@@ -49,8 +49,8 @@
 		qcom,clk-freq-out = <400000>;
 		qcom,clk-freq-in  = <19200000>;
 		clock-names = "iface_clk", "core_clk";
-		clocks = <&clock_gcc clk_gcc_blsp1_ahb_clk>,
-			<&clock_gcc clk_gcc_blsp1_qup4_i2c_apps_clk>;
+		clocks = <&gcc GCC_BLSP1_AHB_CLK>,
+			<&gcc GCC_BLSP1_QUP4_I2C_APPS_CLK>;
 
 		pinctrl-names = "i2c_active", "i2c_sleep";
 		pinctrl-0 = <&i2c_4_active>;
@@ -75,8 +75,8 @@
 		qcom,clk-freq-out = <400000>;
 		qcom,clk-freq-in  = <19200000>;
 		clock-names = "iface_clk", "core_clk";
-		clocks = <&clock_gcc clk_gcc_blsp2_ahb_clk>,
-			<&clock_gcc clk_gcc_blsp2_qup1_i2c_apps_clk>;
+		clocks = <&gcc GCC_BLSP2_AHB_CLK>,
+			<&gcc GCC_BLSP2_QUP1_I2C_APPS_CLK>;
 
 		pinctrl-names = "i2c_active", "i2c_sleep";
 		pinctrl-0 = <&i2c_5_active>;
