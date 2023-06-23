@@ -20,7 +20,7 @@
 		reg-names = "qup_phys_addr";
 		reg = <0x78b7000 0x600>;
 		interrupt-names = "qup_irq";
-		interrupts = <0 97 0>;
+		interrupts = <0 97 IRQ_TYPE_LEVEL_HIGH>;
 		qcom,clk-freq-out = <400000>;
 		qcom,clk-freq-in  = <19200000>;
 		clock-names = "iface_clk", "core_clk";

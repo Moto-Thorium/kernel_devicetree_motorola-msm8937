@@ -45,7 +45,7 @@
 		reg-names = "qup_phys_addr";
 		reg = <0x78b8000 0x600>;
 		interrupt-names = "qup_irq";
-		interrupts = <0 98 0>;
+		interrupts = <0 98 IRQ_TYPE_LEVEL_HIGH>;
 		qcom,clk-freq-out = <400000>;
 		qcom,clk-freq-in  = <19200000>;
 		clock-names = "iface_clk", "core_clk";
@@ -71,7 +71,7 @@
 		reg-names = "qup_phys_addr";
 		reg = <0x7af5000 0x600>;
 		interrupt-names = "qup_irq";
-		interrupts = <0 299 0>;
+		interrupts = <0 299 IRQ_TYPE_LEVEL_HIGH>;
 		qcom,clk-freq-out = <400000>;
 		qcom,clk-freq-in  = <19200000>;
 		clock-names = "iface_clk", "core_clk";

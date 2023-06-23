@@ -99,7 +99,7 @@
 		       <0x7ac4000 0x1f000>;
 		interrupt-names = "spi_irq", "spi_bam_irq";
 		/* IRQ 239 for BLSP2 */
-		interrupts = <0 301 0>, <0 239 0>;
+		interrupts = <0 301 IRQ_TYPE_LEVEL_HIGH>, <0 239 IRQ_TYPE_LEVEL_HIGH>;
 		spi-max-frequency = <19200000>;
 		pinctrl-names = "spi_default", "spi_sleep";
 		pinctrl-0 = <&spi_7_active &spi7_cs0_active>;
