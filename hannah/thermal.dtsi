@@ -1,10 +1,10 @@
 #ifndef DEVICE_HANNAH
 &pm8937_vadc {
-	chan@11 {
+	pa_therm1 {
 		label = "msm_therm";
 	};
 
-	chan@13 {
+	case_therm {
 		label = "chg_therm";
 	};
 };
