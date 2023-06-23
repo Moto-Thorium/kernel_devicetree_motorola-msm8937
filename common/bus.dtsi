@@ -36,6 +36,11 @@
 		dmas = <&dma_blsp1 8 64 0x20000020 0x20>,
 			<&dma_blsp1 9 32 0x20000020 0x20>;
 		dma-names = "tx", "rx";
+		qcom,disable-dma;
 	};
 
+};
+
+&i2c_2 {
+	qcom,disable-dma;
 };
