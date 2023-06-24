@@ -5,6 +5,7 @@
 		qcom,resource-id = <18>;
 		qcom,regulator-type = <0>;
 		qcom,hpm-min-load = <10000>;
+		qcom,regulator-hw-type = "pmic4-ldo";
 		status = "okay";
 
 		regulator-l18 {
