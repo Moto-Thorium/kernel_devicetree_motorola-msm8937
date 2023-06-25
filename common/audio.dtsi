@@ -26,9 +26,6 @@
 		"AMIC2", "MIC BIAS Internal2",
 		"AMIC3", "MIC BIAS External";
 	/delete-property/ qcom,hdmi-dba-codec-rx;
-
-	asoc-codec = <&stub_codec>, <&msm_digital_codec>;
-	asoc-codec-names = "msm-stub-codec.1", "msm-dig-codec";
 };
 
 #ifndef OPTION_USE_WSA_CODEC
