@@ -26,4 +26,6 @@
 			"qcom,msm8917";
 
 	qcom,board-id = <0x44 0x8000>;
+
+	motorola,variant = "rhannah";
 };

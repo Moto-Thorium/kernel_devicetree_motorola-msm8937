@@ -24,4 +24,6 @@
 			"qcom,msm8940";
 
 	qcom,board-id = <0x48 0x8000>, <0x49 0x8000>;
+
+	motorola,variant = "hannah";
 };
