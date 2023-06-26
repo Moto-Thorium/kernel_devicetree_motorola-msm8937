@@ -12,9 +12,17 @@
 
 /dts-v1/;
 
-#include "msm8917.dtsi"
-#include "msm8917-nora.dtsi"
+#include "qcom/msm8917.dtsi"
+
+#define SOC_MSM8917
+#include "common/common.dtsi"
+
+#include "nora/nora.dtsi"
 
 / {
+	model = "nora";
+	compatible = "qcom,msm8917-nora", "qcom,msm8917-moto",
+			"qcom,msm8917";
+
 	qcom,board-id = <0x41 0x8100>, <0x41 0x8000>;
 };
