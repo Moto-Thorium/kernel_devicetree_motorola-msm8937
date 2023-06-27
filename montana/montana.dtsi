@@ -22,7 +22,7 @@
 #include "nfc.dtsi"
 #include "pmi8950.dtsi"
 #include "regulator.dtsi"
-#include "sensor-sar.dtsi"
+#include "sensor.dtsi"
 #include "storage.dtsi"
 #include "thermal.dtsi"
 #include "touchscreen.dtsi"

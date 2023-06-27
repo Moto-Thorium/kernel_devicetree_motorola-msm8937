@@ -1,9 +1,3 @@
-/ {
-	aliases {
-		i2c5 = &i2c_5;
-	};
-};
-
 &soc {
     spi_4: spi@78b8000 { /* BLSP1 QUP4 */
         status = "disabled";
