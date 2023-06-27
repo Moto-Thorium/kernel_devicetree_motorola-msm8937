@@ -1,7 +1,7 @@
 # Based on
 | Category | Stock kernel branch |
 | -------- | ------------------- |
-| batterydata | MMI-OPP27.91-122 |
+| batterydata | pie-9.0.0-release-ppss29.55-37 |
 | common | MMI-OPP27.91-122 |
 | dsi-panel | MMI-OPP27.91-122 |
 | hannah | MMI-OPP27.91-122 |
