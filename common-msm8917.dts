@@ -1,6 +1,0 @@
-/dts-v1/;
-
-#include "qcom/msm8917.dtsi"
-
-#define SOC_MSM8917
-#include "common/common.dtsi"

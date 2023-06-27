@@ -1,4 +1,0 @@
-/dts-v1/;
-
-#define SOC_MSM8940
-#include "common/common.dtsi"
