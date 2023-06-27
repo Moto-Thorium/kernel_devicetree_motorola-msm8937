@@ -46,6 +46,7 @@
 #include "bus.dtsi"
 #include "display.dtsi"
 #include "misc.dtsi"
+#include "pm8937.dtsi"
 #include "pmi8950.dtsi"
 #include "regulator.dtsi"
 #include "reserved-memory.dtsi"

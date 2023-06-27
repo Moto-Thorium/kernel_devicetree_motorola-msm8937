@@ -3,6 +3,7 @@
 };
 
 &soc {
+#ifdef SOC_MSM8917
 	mcd {
 		compatible = "qcom,mcd";
 		qcom,ce-hw-instance = <0>;
@@ -17,6 +18,7 @@
 				"iface_clk", "bus_clk";
 		qcom,ce-opp-freq = <100000000>;
 	};
+#endif
 
 #ifdef SOC_MSM8917
 	qcom_tzlog: tz-log@8600720

@@ -1,6 +1,8 @@
+#ifdef SOC_MSM8917
 &adsp_mem {
 	compatible = "removed-dma-pool";
 };
+#endif
 
 &other_ext_mem {
 	reg = <0x0 0x84300000 0x0 0x2500000>;
