@@ -1,0 +1,62 @@
+&pm8937_gpios {
+	gpio@c400 {
+		qcom,mode = <0>;
+		qcom,output-type = <0>;
+		qcom,pull = <0>;
+		qcom,vin-sel = <2>;
+		qcom,out-strength = <3>;
+		qcom,src-sel = <0>;
+		qcom,master-en = <1>;
+		status = "okay";
+	};
+};
+
+&i2c_5 { /* BLSP2 QUP1 (NFC) */
+	pnxxx: pnxxx@28 {
+	    compatible = "nxp,pn544";
+	    reg = <0x28>;
+	    interrupt-parent = <&tlmm>;
+	    interrupts = <9 0>;
+	    gpios = <&tlmm 9 0>, /* IRQ */
+	    <&tlmm 93 0>, /* VEN */
+	    <&tlmm 130 0>; /* Firmware */
+
+	    nxp,pnxxx-discharge-delay = <100>;
+	    nxp,pnxxx-ven-inv-polarity = <0>;
+
+	    pinctrl-names = "default";
+	    pinctrl-0=<&nfc_irq_default &nfc_pwr_default &nfc_firm_default>;
+
+	    qcom,clk-gpio = <&pm8937_gpios 5 0x00>;
+	    qcom,clk-src = "BBCLK2";
+	    clocks = <&clock_gcc clk_bb_clk2_pin>;
+	    clock-names = "ref_clk";
+	};
+};
+
+&tlmm {
+	pmx_nfc_irq {
+		pins = "gpio9";
+		qcom,pin-func = <0>;
+		qcom,num-grp-pins = <1>;
+		label = "nfc_irq";
+	};
+	pmx_nfc_pwr {
+		pins = "gpio93";
+		qcom,num-grp-pins = <1>;
+		qcom,pin-func = <0>;
+		label = "nfc_pwr";
+
+		nfc_pwr_default: default {
+			bias-pull-down;
+			output-low;
+			drive-strength = <2>;
+		};
+	};
+	pmx_nfc_firm {
+		pins = "gpio130";
+		qcom,num-grp-pins = <1>;
+		qcom,pin-func = <0>;
+		label = "nfc_firm";
+	};
+};

@@ -12,7 +12,7 @@
 
 /dts-v1/;
 
-#include "msm8937-montana.dtsi"
+#include "montana/montana.dtsi"
 
 / {
 	qcom,board-id = <0x44 0x8300>;
