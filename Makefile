@@ -2,6 +2,11 @@
 # to be runtime added by the bootloader (i.e. /chosen properties)
 DTC_FLAGS := -p 1024
 
+dtb-y += common-msm8917.dtb
+dtb-y += common-msm8920.dtb
+dtb-y += common-msm8937.dtb
+dtb-y += common-msm8940.dtb
+
 dtb-y += msm8917-hannah-p0.dtb
 dtb-y += msm8937-hannah-p0.dtb
 dtb-y += msm8940-hannah-p0.dtb
