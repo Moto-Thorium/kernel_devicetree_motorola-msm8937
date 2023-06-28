@@ -1,9 +1,11 @@
 &int_codec {
+#ifndef OPTION_USE_WSA_CODEC
 	/delete-property/ asoc-wsa-codec-names;
 	/delete-property/ asoc-wsa-codec-prefixes;
 	/delete-property/ msm-vdd-wsa-switch-supply;
 	/delete-property/ qcom,msm-vdd-wsa-switch-voltage;
 	/delete-property/ qcom,msm-vdd-wsa-switch-current;
+#endif
 
 	status = "okay";
 	qcom,model = "msm8952-snd-card";
@@ -25,6 +27,7 @@
 	asoc-codec-names = "msm-stub-codec.1", "msm-dig-codec";
 };
 
+#ifndef OPTION_USE_WSA_CODEC
 &soc {
 	/delete-node/ sound-9335;
 	/delete-node/ wsa881x_analog_vi_pctrl;
@@ -54,3 +57,4 @@
 	/delete-node/ wsa_reset;
 	/delete-node/ wsa-vi;
 };
+#endif
