@@ -24,11 +24,7 @@
 		reg = <0x38>;
 		interrupt-parent = <&tlmm>;
 		interrupts = <65 0x02>;
-#ifdef MSM8920
-		vcc_i2c-supply = <&pm8917_l6>;
-#else
 		vcc_i2c-supply = <&pm8937_l6>;
-#endif
 		pinctrl-names = "pmx_ts_active","pmx_ts_suspend","pmx_ts_release";
 		pinctrl-0 = <&ts_int_active &ts_reset_active>;
 		pinctrl-1 = <&ts_int_suspend &ts_reset_suspend>;

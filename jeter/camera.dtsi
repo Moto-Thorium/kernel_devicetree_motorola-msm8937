@@ -21,17 +21,10 @@
 	};
 };
 
-#ifdef SOC_MSM8920
-#define PM8937_L6 pm8917_l6
-#define PM8937_L17 pm8917_l17
-#define PM8937_L22 pm8917_l22
-#define PM8937_L23 pm8917_l23
-#else
 #define PM8937_L6 pm8937_l6
 #define PM8937_L17 pm8937_l17
 #define PM8937_L22 pm8937_l22
 #define PM8937_L23 pm8937_l23
-#endif
 
 &cci {
 	actuator0: qcom,actuator@0 {
