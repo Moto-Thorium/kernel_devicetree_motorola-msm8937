@@ -1,0 +1,22 @@
+s|clock_gcc clk_bb_clk2_pin|rpmcc RPM_SMD_BB_CLK2_PIN|g;
+s|clock_gcc clk_bb_clk2|rpmcc RPM_SMD_BB_CLK2|g;
+
+s|clock_gcc clk_cci_clk_src|gcc CCI_CLK_SRC|g;
+s|clock_gcc clk_gcc_blsp1_ahb_clk|gcc GCC_BLSP1_AHB_CLK|g;
+s|clock_gcc clk_gcc_blsp1_qup1_spi_apps_clk|gcc GCC_BLSP1_QUP1_SPI_APPS_CLK|g;
+s|clock_gcc clk_gcc_blsp1_qup3_i2c_apps_clk|gcc GCC_BLSP1_QUP3_I2C_APPS_CLK|g;
+s|clock_gcc clk_gcc_blsp1_qup4_i2c_apps_clk|gcc GCC_BLSP1_QUP4_I2C_APPS_CLK|g;
+s|clock_gcc clk_gcc_blsp2_ahb_clk|gcc GCC_BLSP2_AHB_CLK|g;
+s|clock_gcc clk_gcc_blsp2_qup1_i2c_apps_clk|gcc GCC_BLSP2_QUP1_I2C_APPS_CLK|g;
+s|clock_gcc clk_gcc_blsp2_qup3_spi_apps_clk|gcc GCC_BLSP2_QUP3_SPI_APPS_CLK|g;
+s|clock_gcc clk_gcc_camss_ahb_clk|gcc GCC_CAMSS_AHB_CLK|g;
+s|clock_gcc clk_gcc_camss_cci_ahb_clk|gcc GCC_CAMSS_CCI_AHB_CLK|g;
+s|clock_gcc clk_gcc_camss_cci_clk|gcc GCC_CAMSS_CCI_CLK|g;
+s|clock_gcc clk_gcc_camss_ispif_ahb_clk|gcc GCC_CAMSS_ISPIF_AHB_CLK|g;
+s|clock_gcc clk_gcc_camss_mclk0_clk|gcc GCC_CAMSS_MCLK0_CLK|g;
+s|clock_gcc clk_gcc_camss_mclk1_clk|gcc GCC_CAMSS_MCLK1_CLK|g;
+s|clock_gcc clk_gcc_camss_mclk2_clk|gcc GCC_CAMSS_MCLK2_CLK|g;
+s|clock_gcc clk_gcc_camss_top_ahb_clk|gcc GCC_CAMSS_TOP_AHB_CLK|g;
+s|clock_gcc clk_mclk0_clk_src|gcc MCLK0_CLK_SRC|g;
+s|clock_gcc clk_mclk1_clk_src|gcc MCLK1_CLK_SRC|g;
+s|clock_gcc clk_mclk2_clk_src|gcc MCLK2_CLK_SRC|g;
