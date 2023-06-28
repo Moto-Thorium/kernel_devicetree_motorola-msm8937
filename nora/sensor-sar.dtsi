@@ -6,8 +6,8 @@
 		pinctrl-0 = <&sx9310_int_default>;
 		interrupt-parent = <&tlmm>;
 		interrupts = <59 0x2002>;
-		cap_vdd-supply = <&pm8917_l10>;
-		cap_svdd-supply = <&pm8917_l5>;
+		cap_vdd-supply = <&pm8937_l10>;
+		cap_svdd-supply = <&pm8937_l5>;
 		gpios = <&tlmm 59 0x2008>; /* IRQ */
 		cap,use_channel = <0x0f>;
 		cap,use_channel_top = <0x00>;
@@ -21,8 +21,8 @@
 	sar_abov:abov@20 {
 		compatible = "abov,abov_sar";
 		reg = <0x20>;
-		cap_vdd-supply = <&pm8917_l10>;
-		cap_svdd-supply = <&pm8917_l5>;
+		cap_vdd-supply = <&pm8937_l10>;
+		cap_svdd-supply = <&pm8937_l5>;
 		interrupt-parent = <&tlmm>;
 		interrupts = <59 0x2008>;
 		gpios = <&tlmm 59 0x2008>; /* IRQ */

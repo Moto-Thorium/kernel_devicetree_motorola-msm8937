@@ -29,7 +29,7 @@
 
 &mdss_dsi0 {
 	qcom,dsi-pref-prim-pan = <&mot_tianma_570_hd_vid_v0>;
-	vddio_disp-supply = <&pm8917_l6>;
+	vddio_disp-supply = <&pm8937_l6>;
 	vsp_disp-supply = <&lab_regulator>;
 	vsn_disp-supply = <&ibb_regulator>;
 
