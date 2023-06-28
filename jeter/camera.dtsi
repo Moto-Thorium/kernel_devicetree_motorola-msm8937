@@ -53,17 +53,18 @@
 		cam_vdig-supply = <&PM8937_L23>;
 		cam_vio-supply = <&PM8937_L6>;
 		cam_vana-supply = <&PM8937_L22>;
-		cam_vaf-supply = <&PM8937_L17>;
 #ifdef DEVICE_JETER
 		qcom,cam-vreg-name = "cam_vdig","cam_vio","cam_vana";
 		qcom,cam-vreg-min-voltage = <1200000 0 2900000>;
 		qcom,cam-vreg-max-voltage = <1200000 0 2900000>;
+		qcom,cam-vreg-op-mode = <105000 0 80000>;
 #else
+		cam_vaf-supply = <&PM8937_L17>;
 		qcom,cam-vreg-name = "cam_vdig","cam_vio","cam_vana","cam_vaf";
 		qcom,cam-vreg-min-voltage = <1200000 0 2900000 2850000>;
 		qcom,cam-vreg-max-voltage = <1200000 0 2900000 2850000>;
-#endif
 		qcom,cam-vreg-op-mode = <105000 0 80000 100000>;
+#endif
 		pinctrl-names = "cam_default", "cam_suspend";
 		pinctrl-0 = <&cam_sensor_mclk0_default
 				&cam_sensor_rear_default>;
