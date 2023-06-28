@@ -26,6 +26,8 @@
                         "qcom,msm8920";
 
 	qcom,board-id = <0x43 0x83a0>;
+
+	motorola,variant = "jeter";
 };
 
 &soc {

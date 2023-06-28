@@ -24,4 +24,6 @@
 			"qcom,msm8937";
 
 	qcom,board-id = <0x4A 0x8100>, <0x4A 0x8000>, <0x4B 0x8000>;
+
+	motorola,variant = "aljeter";
 };
