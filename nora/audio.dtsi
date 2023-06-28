@@ -1,6 +1,4 @@
 &soc {
-	/delete-node/ i2c@78b8000;
-
 	sound {
 		/delete-property/ qcom,cdc-us-euro-gpios;
 		qcom,msm-micbias1-ext-cap;
