@@ -12,7 +12,7 @@
 #endif
 
 	status = "okay";
-	qcom,model = "msm8952-snd-card";
+	qcom,model = "msm8952-snd-card-mtp";
 	qcom,msm-mbhc-hphl-swh = <1>;
 	qcom,msm-mbhc-gnd-swh = <1>;
 	qcom,msm-hs-micbias-type = "internal";
